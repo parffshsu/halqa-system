@@ -36,16 +36,12 @@ html[data-theme="dark"]{
 body{margin:0;font-family:Vazirmatn,Tahoma,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;transition:background .3s,color .3s;min-height:100vh}
 .page{display:none;min-height:100vh}
 .page.active{display:block}
-
-/* هدر */
 header{background:linear-gradient(135deg,#084c47,#0b6b62);color:#fff;padding:14px 20px;box-shadow:0 2px 10px rgba(0,0,0,.15);position:sticky;top:0;z-index:50}
 .header-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 .header-title{font-size:16px;font-weight:bold;display:flex;align-items:center;gap:8px}
 .header-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .header-btn{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);color:#fff;padding:6px 14px;border-radius:10px;font-size:12px;cursor:pointer;font-family:inherit;font-weight:bold;display:inline-flex;align-items:center;gap:6px}
 .header-btn:hover{background:rgba(255,255,255,.25)}
-
-/* ورود */
 #loginPage{display:flex;align-items:center;justify-content:center;padding:20px}
 .login-container{background:var(--bg-card);border-radius:20px;padding:32px 26px;max-width:420px;width:100%;box-shadow:0 20px 60px var(--shadow-strong);text-align:center}
 .login-container h1{margin:0 0 6px;font-size:22px;color:var(--accent)}
@@ -68,19 +64,14 @@ button:active{transform:scale(.97)}
 .msg{font-size:13px;margin-top:12px;min-height:20px}
 .msg.err{color:#c94f4f}
 .msg.ok{color:#2e8b57}
-
-/* محتوای پنل */
 .container{max-width:1200px;margin:auto;padding:20px}
 .panel-tabs{display:flex;gap:6px;margin-bottom:20px;background:var(--bg-card);padding:8px;border-radius:14px;box-shadow:0 3px 12px var(--shadow);overflow-x:auto}
 .panel-tab{padding:10px 16px;border:none;border-radius:10px;background:transparent;font-family:inherit;font-size:13px;font-weight:bold;color:var(--text-soft);cursor:pointer;white-space:nowrap}
 .panel-tab.active{background:var(--accent);color:#fff}
 .panel-section{display:none}
 .panel-section.active{display:block}
-
 .card{background:var(--bg-card);border-radius:14px;padding:20px;box-shadow:0 4px 16px var(--shadow);margin-bottom:16px}
 .card h2{margin:0 0 16px;font-size:17px;color:var(--accent);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-
-/* حلقه‌ها */
 .halqa-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
 .halqa-card{background:var(--bg-soft);border-radius:14px;overflow:hidden;border-right:4px solid var(--accent2);box-shadow:0 3px 12px var(--shadow);display:flex;flex-direction:column}
 .halqa-card .halqa-cover{width:100%;height:140px;background:linear-gradient(135deg,#084c47,#0b6b62);display:flex;align-items:center;justify-content:center;font-size:52px;color:#fff;position:relative;overflow:hidden}
@@ -91,8 +82,6 @@ button:active{transform:scale(.97)}
 .halqa-card .halqa-desc{font-size:12px;color:var(--text-soft);margin:8px 0;line-height:1.6}
 .halqa-card .halqa-pass{font-family:monospace;background:var(--bg-card);padding:4px 10px;border-radius:8px;font-size:12px;display:inline-block;margin-top:6px;border:1px solid var(--border);color:var(--accent2)}
 .halqa-card .halqa-actions{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
-
-/* فیلدها */
 .field-list{display:flex;flex-direction:column;gap:10px}
 .field-item{background:var(--bg-soft);border-radius:10px;padding:14px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;border-right:4px solid var(--accent2)}
 .field-item.inactive{opacity:.5}
@@ -101,8 +90,6 @@ button:active{transform:scale(.97)}
 .field-item .field-meta{font-size:11px;color:var(--text-mute)}
 .field-item .field-actions{display:flex;gap:6px;flex-wrap:wrap}
 .field-tag{display:inline-block;background:var(--accent2);color:#fff;font-size:10px;padding:2px 8px;border-radius:6px;margin-left:6px}
-
-/* کارت‌های اعضا */
 .members-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
 .member-card{background:var(--bg-soft);border-radius:14px;padding:16px;border-right:4px solid var(--accent2);transition:transform .2s,box-shadow .2s;position:relative}
 .member-card:hover{transform:translateY(-3px);box-shadow:0 8px 20px var(--shadow-strong)}
@@ -117,38 +104,20 @@ button:active{transform:scale(.97)}
 .q-inactive{background:#fee2e2;color:#991b1b}
 .member-card .mc-actions{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
 .member-card .mc-actions button{flex:1;padding:6px 8px;font-size:11px;border-radius:8px;border:none;cursor:pointer;color:#fff;font-family:inherit;font-weight:bold;min-width:auto}
-
-/* جدول */
-.table-wrap{overflow-x:auto;background:var(--bg-card);border-radius:12px;box-shadow:0 4px 16px var(--shadow)}
-table{width:100%;border-collapse:collapse;font-size:13px;min-width:600px}
-th,td{padding:11px 12px;text-align:right;border-bottom:1px solid var(--border-soft);white-space:nowrap}
-th{background:var(--bg-soft);color:var(--accent);font-weight:bold}
-tr:hover{background:var(--bg-soft2)}
-.tag-list{display:flex;gap:4px;flex-wrap:wrap}
-.tag{background:var(--bg-soft);color:var(--accent2);font-size:11px;padding:2px 8px;border-radius:8px;border:1px solid var(--border)}
-.table-actions button{padding:4px 8px;font-size:11px;border-radius:6px;border:none;cursor:pointer;color:#fff;font-family:inherit;margin-left:4px}
-
-/* فیلترها */
 .filters{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:10px;margin-bottom:16px}
 @media(max-width:700px){.filters{grid-template-columns:1fr}}
-
-/* جلسات */
 .sessions-list{display:flex;flex-direction:column;gap:10px}
 .session-item{background:var(--bg-soft);border-radius:12px;padding:14px 16px;border-right:4px solid #1e6bb8;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .session-item .si-info{flex:1;min-width:200px}
 .session-item h4{margin:0 0 4px;color:var(--accent);font-size:15px}
 .session-item .si-meta{font-size:12px;color:var(--text-mute)}
 .session-item .si-actions{display:flex;gap:6px;flex-wrap:wrap}
-
-/* آلبوم عکس */
 .photos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
 .photo-item{background:var(--bg-soft);border-radius:12px;overflow:hidden;position:relative;aspect-ratio:1;cursor:pointer}
 .photo-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
 .photo-item:hover img{transform:scale(1.05)}
 .photo-item .photo-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.8));color:#fff;padding:20px 10px 8px;font-size:11px;line-height:1.4}
 .photo-item .photo-del{position:absolute;top:8px;left:8px;background:#c94f4f;color:#fff;border:none;border-radius:50%;width:28px;height:28px;cursor:pointer;font-size:14px;z-index:2;line-height:1}
-
-/* پروفایل حلقه */
 .halqa-profile{background:var(--bg-card);border-radius:16px;overflow:hidden;box-shadow:0 6px 24px var(--shadow)}
 .halqa-profile .hp-cover{width:100%;height:200px;background:linear-gradient(135deg,#084c47,#0b6b62);display:flex;align-items:center;justify-content:center;font-size:80px;color:#fff;position:relative;overflow:hidden}
 .halqa-profile .hp-cover img{width:100%;height:100%;object-fit:cover}
@@ -157,8 +126,6 @@ tr:hover{background:var(--bg-soft2)}
 .halqa-profile .hp-desc{color:var(--text-soft);line-height:1.8;font-size:14px;margin:12px 0}
 .halqa-profile .hp-stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px}
 .halqa-profile .hp-stat{background:var(--bg-soft);padding:10px 16px;border-radius:10px;font-size:13px;color:var(--accent);font-weight:bold}
-
-/* مودال */
 .modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1000;justify-content:center;align-items:flex-start;padding:40px 20px;overflow-y:auto}
 .modal-bg.open{display:flex}
 .modal{background:var(--bg-card);border-radius:16px;padding:24px;max-width:520px;width:100%;position:relative;margin:auto;box-shadow:0 20px 60px rgba(0,0,0,.4)}
@@ -171,14 +138,10 @@ tr:hover{background:var(--bg-soft2)}
 .modal-actions button{flex:1;min-width:120px}
 .cover-preview{width:100%;height:120px;border-radius:10px;background:var(--bg-soft);margin-top:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;font-size:40px;color:var(--text-mute);border:2px dashed var(--border)}
 .cover-preview img{width:100%;height:100%;object-fit:cover}
-
-/* چک‌باکس چندگانه */
 .checkbox-group{display:flex;flex-wrap:wrap;gap:8px}
 .checkbox-item{display:inline-flex;align-items:center;gap:6px;background:var(--bg-soft);padding:6px 12px;border-radius:20px;font-size:12px;cursor:pointer;border:2px solid transparent;transition:all .15s}
 .checkbox-item input{display:none}
 .checkbox-item.checked{background:var(--accent2);color:#fff;border-color:var(--accent)}
-
-/* حضور و غیاب */
 .attendance-row{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--border-soft);flex-wrap:wrap;font-size:13px}
 .attendance-row .att-name{flex:1;min-width:120px;font-weight:bold;color:var(--accent)}
 .att-options{display:flex;gap:6px;flex-wrap:wrap}
@@ -187,18 +150,13 @@ tr:hover{background:var(--bg-soft2)}
 .att-btn.active-absent{background:#c94f4f;color:#fff;border-color:#c94f4f}
 .att-btn.active-late{background:#c48b1f;color:#fff;border-color:#c48b1f}
 .att-rating-select{padding:6px 10px;border-radius:8px;border:2px solid var(--border);font-size:12px;background:var(--bg-card);color:var(--text);font-family:inherit;min-width:120px}
-
-/* خالی */
 .empty-state{text-align:center;color:var(--text-mute);padding:40px 20px;font-size:14px}
 .empty-state .icon{font-size:40px;display:block;margin-bottom:10px;opacity:.5}
-
-/* لایت‌باکس */
 .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:2000;justify-content:center;align-items:center;flex-direction:column;padding:20px}
 .lightbox.open{display:flex}
 .lightbox img{max-width:95vw;max-height:75vh;border-radius:12px}
 .lightbox .lb-caption{color:#fff;font-size:14px;margin-top:14px;text-align:center;max-width:600px}
 .lightbox .lb-close{position:absolute;top:20px;right:20px;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:26px;width:44px;height:44px;border-radius:50%;cursor:pointer}
-
 @media(max-width:600px){
   .container{padding:14px}
   .login-container{padding:24px 18px}
@@ -211,40 +169,32 @@ tr:hover{background:var(--bg-soft2)}
 </head>
 <body>
 
-<!-- ============ صفحه ورود ============ -->
 <div class="page active" id="loginPage">
   <div class="login-container">
     <div style="font-size:44px;margin-bottom:8px">📊</div>
     <h1>سامانه مدیریت حلقه‌ها</h1>
     <p class="sub">ثبت و مشاهده‌ی اطلاعات اعضای حلقه‌ها</p>
-
     <div class="login-tabs">
       <button class="login-tab active" data-tab="coach" onclick="switchLoginTab('coach')">👥 ورود به حلقه</button>
       <button class="login-tab" data-tab="admin" onclick="switchLoginTab('admin')">🔐 مدیر</button>
     </div>
-
     <div id="coachLoginBox">
       <form onsubmit="event.preventDefault();coachLogin();">
-        <select id="halqaSelect" required>
-          <option value="">— انتخاب حلقه —</option>
-        </select>
+        <select id="halqaSelect" required><option value="">— انتخاب حلقه —</option></select>
         <input id="coachPassword" type="password" placeholder="رمز حلقه" required>
         <button class="btn" type="submit">ورود به حلقه</button>
       </form>
     </div>
-
     <div id="adminLoginBox" style="display:none">
       <form onsubmit="event.preventDefault();adminLogin();">
         <input id="adminPassword" type="password" placeholder="رمز مدیر" required>
         <button class="btn" type="submit">ورود مدیر</button>
       </form>
     </div>
-
     <p class="msg" id="loginMsg"></p>
   </div>
 </div>
 
-<!-- ============ پنل مدیر ============ -->
 <div class="page" id="adminPage">
   <header>
     <div class="header-inner">
@@ -255,7 +205,6 @@ tr:hover{background:var(--bg-soft2)}
       </div>
     </div>
   </header>
-
   <div class="container">
     <div class="panel-tabs">
       <button class="panel-tab active" data-section="halqas" onclick="switchAdminSection('halqas')">📁 حلقه‌ها</button>
@@ -263,16 +212,12 @@ tr:hover{background:var(--bg-soft2)}
       <button class="panel-tab" data-section="allMembers" onclick="switchAdminSection('allMembers')">👥 همه‌ی اعضا</button>
       <button class="panel-tab" data-section="sessions" onclick="switchAdminSection('sessions')">📅 جلسات</button>
     </div>
-
-    <!-- حلقه‌ها -->
     <div class="panel-section active" id="adminSection-halqas">
       <div class="card">
         <h2>📁 لیست حلقه‌ها <button class="btn btn-sm btn-success" onclick="openHalqaModal()">➕ حلقه جدید</button></h2>
         <div class="halqa-list" id="halqasList"></div>
       </div>
     </div>
-
-    <!-- فیلدها -->
     <div class="panel-section" id="adminSection-fields">
       <div class="card">
         <h2>⚙️ فیلدهای اطلاعاتی <button class="btn btn-sm btn-success" onclick="openFieldModal()">➕ فیلد جدید</button></h2>
@@ -280,8 +225,6 @@ tr:hover{background:var(--bg-soft2)}
         <div class="field-list" id="fieldsList"></div>
       </div>
     </div>
-
-    <!-- همه اعضا -->
     <div class="panel-section" id="adminSection-allMembers">
       <div class="card">
         <h2>👥 همه‌ی اعضای همه‌ی حلقه‌ها</h2>
@@ -295,14 +238,9 @@ tr:hover{background:var(--bg-soft2)}
           <select id="adminFilterValue" onchange="renderAllMembers()"></select>
         </div>
         <div id="allMembersCards" class="members-cards"></div>
-        <div class="empty-state" id="allMembersEmpty" style="display:none">
-          <span class="icon">👥</span>
-          هنوز عضوی ثبت نشده
-        </div>
+        <div class="empty-state" id="allMembersEmpty" style="display:none"><span class="icon">👥</span>هنوز عضوی ثبت نشده</div>
       </div>
     </div>
-
-    <!-- جلسات -->
     <div class="panel-section" id="adminSection-sessions">
       <div class="card">
         <h2>📅 جلسات <button class="btn btn-sm btn-success" onclick="openSessionModal()">➕ جلسه جدید</button></h2>
@@ -310,16 +248,12 @@ tr:hover{background:var(--bg-soft2)}
           <select id="adminSessionFilterHalqa" onchange="renderAdminSessions()"><option value="">همه‌ی حلقه‌ها</option></select>
         </div>
         <div class="sessions-list" id="adminSessionsList"></div>
-        <div class="empty-state" id="adminSessionsEmpty" style="display:none">
-          <span class="icon">📅</span>
-          هنوز جلسه‌ای ثبت نشده
-        </div>
+        <div class="empty-state" id="adminSessionsEmpty" style="display:none"><span class="icon">📅</span>هنوز جلسه‌ای ثبت نشده</div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ============ پنل حلقه (مربی) ============ -->
 <div class="page" id="coachPage">
   <header>
     <div class="header-inner">
@@ -330,7 +264,6 @@ tr:hover{background:var(--bg-soft2)}
       </div>
     </div>
   </header>
-
   <div class="container">
     <div class="panel-tabs">
       <button class="panel-tab active" data-section="members" onclick="switchCoachSection('members')">👥 اعضا</button>
@@ -338,8 +271,6 @@ tr:hover{background:var(--bg-soft2)}
       <button class="panel-tab" data-section="photos" onclick="switchCoachSection('photos')">📸 آلبوم عکس</button>
       <button class="panel-tab" data-section="profile" onclick="switchCoachSection('profile')">ℹ️ پروفایل حلقه</button>
     </div>
-
-    <!-- اعضا -->
     <div class="panel-section active" id="coachSection-members">
       <div class="card">
         <h2>👥 اعضای حلقه <button class="btn btn-sm btn-success" onclick="openMemberModal()">➕ عضو جدید</button></h2>
@@ -350,74 +281,41 @@ tr:hover{background:var(--bg-soft2)}
           <button class="btn btn-success" onclick="exportCoachToExcel()" style="width:auto">📥 Excel</button>
         </div>
         <div id="coachMembersCards" class="members-cards"></div>
-        <div class="empty-state" id="coachMembersEmpty" style="display:none">
-          <span class="icon">👥</span>
-          هنوز عضوی ثبت نشده. اولین نفر رو اضافه کن!
-        </div>
+        <div class="empty-state" id="coachMembersEmpty" style="display:none"><span class="icon">👥</span>هنوز عضوی ثبت نشده. اولین نفر رو اضافه کن!</div>
       </div>
     </div>
-
-    <!-- جلسات -->
     <div class="panel-section" id="coachSection-sessions">
       <div class="card">
         <h2>📅 جلسات حلقه</h2>
         <p style="font-size:12px;color:var(--text-mute);margin:0 0 14px">جلسات توسط مدیر ساخته میشن. اینجا می‌تونی حضور و غیاب و نمره کیفی ثبت کنی.</p>
         <div class="sessions-list" id="coachSessionsList"></div>
-        <div class="empty-state" id="coachSessionsEmpty" style="display:none">
-          <span class="icon">📅</span>
-          هنوز جلسه‌ای نیست
-        </div>
+        <div class="empty-state" id="coachSessionsEmpty" style="display:none"><span class="icon">📅</span>هنوز جلسه‌ای نیست</div>
       </div>
     </div>
-
-    <!-- آلبوم عکس -->
     <div class="panel-section" id="coachSection-photos">
       <div class="card">
         <h2>📸 آلبوم عکس حلقه <button class="btn btn-sm btn-success" onclick="openPhotoModal()">➕ افزودن عکس</button></h2>
         <div class="photos-grid" id="coachPhotosGrid"></div>
-        <div class="empty-state" id="coachPhotosEmpty" style="display:none">
-          <span class="icon">📸</span>
-          هنوز عکسی اضافه نشده
-        </div>
+        <div class="empty-state" id="coachPhotosEmpty" style="display:none"><span class="icon">📸</span>هنوز عکسی اضافه نشده</div>
       </div>
     </div>
-
-    <!-- پروفایل -->
     <div class="panel-section" id="coachSection-profile">
       <div id="coachProfileBox"></div>
     </div>
   </div>
 </div>
 
-<!-- مودال‌ها و JavaScript در بخش‌های بعدی -->
-  <!-- ============ مودال حلقه ============ -->
 <div class="modal-bg" id="halqaModal">
   <div class="modal">
     <button class="close" onclick="closeModal('halqaModal')">✕</button>
     <h3 id="halqaModalTitle">حلقه جدید</h3>
     <form onsubmit="event.preventDefault();saveHalqa();">
       <input type="hidden" id="halqaEditId">
-      <div class="form-row">
-        <label>نام حلقه <span class="required">*</span></label>
-        <input id="halqaName" placeholder="مثال: حلقه شهید صدر زاده" required>
-      </div>
-      <div class="form-row">
-        <label>رمز ورود <span class="required">*</span></label>
-        <input id="halqaPassword" placeholder="مثال: 1234" required>
-      </div>
-      <div class="form-row">
-        <label>نام مربی (اختیاری)</label>
-        <input id="halqaCoach" placeholder="مثال: حاج آقای احمدی">
-      </div>
-      <div class="form-row">
-        <label>توضیحات حلقه (اختیاری)</label>
-        <textarea id="halqaDesc" rows="3" placeholder="توضیحات کوتاه درباره حلقه..."></textarea>
-      </div>
-      <div class="form-row">
-        <label>عکس کاور حلقه (اختیاری)</label>
-        <input type="file" id="halqaCover" accept="image/*">
-        <div class="cover-preview" id="halqaCoverPreview">🖼</div>
-      </div>
+      <div class="form-row"><label>نام حلقه <span class="required">*</span></label><input id="halqaName" placeholder="مثال: حلقه شهید صدر زاده" required></div>
+      <div class="form-row"><label>رمز ورود <span class="required">*</span></label><input id="halqaPassword" placeholder="مثال: 1234" required></div>
+      <div class="form-row"><label>نام مربی (اختیاری)</label><input id="halqaCoach" placeholder="مثال: حاج آقای احمدی"></div>
+      <div class="form-row"><label>توضیحات حلقه (اختیاری)</label><textarea id="halqaDesc" rows="3" placeholder="توضیحات کوتاه..."></textarea></div>
+      <div class="form-row"><label>عکس کاور حلقه (اختیاری)</label><input type="file" id="halqaCover" accept="image/*"><div class="cover-preview" id="halqaCoverPreview">🖼</div></div>
       <div class="modal-actions">
         <button type="button" class="btn btn-secondary" onclick="closeModal('halqaModal')">انصراف</button>
         <button type="submit" class="btn">💾 ذخیره</button>
@@ -426,24 +324,15 @@ tr:hover{background:var(--bg-soft2)}
   </div>
 </div>
 
-<!-- ============ مودال فیلد ============ -->
 <div class="modal-bg" id="fieldModal">
   <div class="modal">
     <button class="close" onclick="closeModal('fieldModal')">✕</button>
     <h3 id="fieldModalTitle">فیلد جدید</h3>
     <form onsubmit="event.preventDefault();saveField();">
       <input type="hidden" id="fieldEditId">
-      <div class="form-row">
-        <label>عنوان فیلد <span class="required">*</span></label>
-        <input id="fieldLabel" placeholder="مثال: علاقه‌ها" required>
-      </div>
-      <div class="form-row">
-        <label>کلید یکتا (انگلیسی، بدون فاصله) <span class="required">*</span></label>
-        <input id="fieldKey" placeholder="مثال: interests" required pattern="[a-z0-9_]+">
-        <p style="font-size:11px;color:var(--text-mute);margin:4px 0 0">فقط حروف کوچک انگلیسی، عدد و _</p>
-      </div>
-      <div class="form-row">
-        <label>نوع فیلد <span class="required">*</span></label>
+      <div class="form-row"><label>عنوان فیلد <span class="required">*</span></label><input id="fieldLabel" placeholder="مثال: علاقه‌ها" required></div>
+      <div class="form-row"><label>کلید یکتا <span class="required">*</span></label><input id="fieldKey" placeholder="مثال: interests" required pattern="[a-z0-9_]+"><p style="font-size:11px;color:var(--text-mute);margin:4px 0 0">فقط حروف کوچک انگلیسی، عدد و _</p></div>
+      <div class="form-row"><label>نوع فیلد <span class="required">*</span></label>
         <select id="fieldType" onchange="onFieldTypeChange()" required>
           <option value="text">متن یک‌خطی</option>
           <option value="textarea">متن چندخطی</option>
@@ -452,19 +341,9 @@ tr:hover{background:var(--bg-soft2)}
           <option value="multiselect">انتخاب چندگانه</option>
         </select>
       </div>
-      <div class="form-row" id="fieldOptionsRow" style="display:none">
-        <label>گزینه‌ها (با ویرگول فارسی «،» جدا کن)</label>
-        <input id="fieldOptions" placeholder="مثال: ورزش، قرآن، هنر">
-      </div>
-      <div class="form-row">
-        <label>ترتیب نمایش</label>
-        <input id="fieldOrder" type="number" placeholder="10" value="10">
-      </div>
-      <div class="form-row">
-        <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
-          <input type="checkbox" id="fieldRequired" style="width:auto"> پر کردن الزامی باشد
-        </label>
-      </div>
+      <div class="form-row" id="fieldOptionsRow" style="display:none"><label>گزینه‌ها (با ویرگول فارسی «،» جدا کن)</label><input id="fieldOptions" placeholder="مثال: ورزش، قرآن، هنر"></div>
+      <div class="form-row"><label>ترتیب نمایش</label><input id="fieldOrder" type="number" placeholder="10" value="10"></div>
+      <div class="form-row"><label style="display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" id="fieldRequired" style="width:auto"> پر کردن الزامی باشد</label></div>
       <div class="modal-actions">
         <button type="button" class="btn btn-secondary" onclick="closeModal('fieldModal')">انصراف</button>
         <button type="submit" class="btn">💾 ذخیره</button>
@@ -473,7 +352,6 @@ tr:hover{background:var(--bg-soft2)}
   </div>
 </div>
 
-<!-- ============ مودال عضو ============ -->
 <div class="modal-bg" id="memberModal">
   <div class="modal">
     <button class="close" onclick="closeModal('memberModal')">✕</button>
@@ -489,7 +367,6 @@ tr:hover{background:var(--bg-soft2)}
   </div>
 </div>
 
-<!-- ============ مودال نمایش عضو ============ -->
 <div class="modal-bg" id="viewMemberModal">
   <div class="modal">
     <button class="close" onclick="closeModal('viewMemberModal')">✕</button>
@@ -498,26 +375,14 @@ tr:hover{background:var(--bg-soft2)}
   </div>
 </div>
 
-<!-- ============ مودال جلسه ============ -->
 <div class="modal-bg" id="sessionModal">
   <div class="modal">
     <button class="close" onclick="closeModal('sessionModal')">✕</button>
     <h3>📅 جلسه جدید</h3>
     <form onsubmit="event.preventDefault();saveSession();">
-      <div class="form-row">
-        <label>حلقه <span class="required">*</span></label>
-        <select id="sessionHalqaId" required>
-          <option value="">— انتخاب حلقه —</option>
-        </select>
-      </div>
-      <div class="form-row">
-        <label>عنوان جلسه <span class="required">*</span></label>
-        <input id="sessionTitle" placeholder="مثال: جلسه هفتگی" required>
-      </div>
-      <div class="form-row">
-        <label>تاریخ جلسه</label>
-        <input id="sessionDate" placeholder="مثال: ۱۴۰۴/۰۷/۰۵">
-      </div>
+      <div class="form-row"><label>حلقه <span class="required">*</span></label><select id="sessionHalqaId" required><option value="">— انتخاب حلقه —</option></select></div>
+      <div class="form-row"><label>عنوان جلسه <span class="required">*</span></label><input id="sessionTitle" placeholder="مثال: جلسه هفتگی" required></div>
+      <div class="form-row"><label>تاریخ جلسه</label><input id="sessionDate" placeholder="مثال: ۱۴۰۴/۰۷/۰۵"></div>
       <div class="modal-actions">
         <button type="button" class="btn btn-secondary" onclick="closeModal('sessionModal')">انصراف</button>
         <button type="submit" class="btn">💾 ذخیره</button>
@@ -526,7 +391,6 @@ tr:hover{background:var(--bg-soft2)}
   </div>
 </div>
 
-<!-- ============ مودال حضور و غیاب ============ -->
 <div class="modal-bg" id="attendanceModal">
   <div class="modal" style="max-width:640px">
     <button class="close" onclick="closeModal('attendanceModal')">✕</button>
@@ -539,24 +403,14 @@ tr:hover{background:var(--bg-soft2)}
   </div>
 </div>
 
-<!-- ============ مودال افزودن عکس ============ -->
 <div class="modal-bg" id="photoModal">
   <div class="modal">
     <button class="close" onclick="closeModal('photoModal')">✕</button>
     <h3>📸 افزودن عکس</h3>
     <form onsubmit="event.preventDefault();savePhoto();">
-      <div class="form-row">
-        <label>عکس <span class="required">*</span></label>
-        <input type="file" id="photoFile" accept="image/*" required>
-      </div>
-      <div class="form-row">
-        <label>توضیح عکس (اختیاری)</label>
-        <input id="photoCaption" placeholder="مثال: اردوی مشهد">
-      </div>
-      <div class="form-row">
-        <label>تاریخ عکس (اختیاری)</label>
-        <input id="photoDate" placeholder="مثال: ۱۴۰۴/۰۷/۰۵">
-      </div>
+      <div class="form-row"><label>عکس <span class="required">*</span></label><input type="file" id="photoFile" accept="image/*" required></div>
+      <div class="form-row"><label>توضیح عکس (اختیاری)</label><input id="photoCaption" placeholder="مثال: اردوی مشهد"></div>
+      <div class="form-row"><label>تاریخ عکس (اختیاری)</label><input id="photoDate" placeholder="مثال: ۱۴۰۴/۰۷/۰۵"></div>
       <div class="modal-actions">
         <button type="button" class="btn btn-secondary" onclick="closeModal('photoModal')">انصراف</button>
         <button type="submit" class="btn">💾 آپلود</button>
@@ -565,7 +419,6 @@ tr:hover{background:var(--bg-soft2)}
   </div>
 </div>
 
-<!-- ============ لایت‌باکس ============ -->
 <div class="lightbox" id="lightbox">
   <button class="lb-close" onclick="closeLightbox()">✕</button>
   <img id="lbImg" src="" alt="">
@@ -573,3 +426,917 @@ tr:hover{background:var(--bg-soft2)}
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL = "https://fpwvkylbhzishmjroolm.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwd3ZreWxiaHppc2htanJvb2xtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAxODU2MDUsImV4cCI6MjEwNTc2MTYwNX0.SAC4gvyK_mVtQ0oZr-aqp6IiSqbrilqmOKzQeMKsKwg";
+const db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+const ADMIN_PASSWORD = "anvar1404";
+const QUALITY_OPTIONS = ["بیش فعال", "فعال", "فعالیت کم", "غیر فعال"];
+const fa = n => new Intl.NumberFormat("fa-IR").format(n);
+const esc = s => String(s || "").replace(/[<>&"]/g, c => ({"<":"&lt;",">":"&gt;","&":"&amp;",'"':"&quot;"}[c]));
+
+let allFields = [];
+let allHalqas = [];
+let currentCoach = null;
+let currentAdmin = false;
+let currentPhotos = [];
+let lbIndex = 0;
+
+function getCurrentTheme(){ return document.documentElement.getAttribute("data-theme") || "light"; }
+function applyTheme(theme){
+  document.documentElement.setAttribute("data-theme", theme);
+  try { localStorage.setItem("halqa_theme", theme); } catch(e){}
+  updateThemeButtons();
+}
+function updateThemeButtons(){
+  const isDark = getCurrentTheme() === "dark";
+  const icon = isDark ? "☀️" : "🌙";
+  const label = isDark ? "حالت روز" : "حالت شب";
+  ["themeIconAdmin","themeIconCoach"].forEach(id => { const el = document.getElementById(id); if(el) el.textContent = icon; });
+  ["themeLabelAdmin","themeLabelCoach"].forEach(id => { const el = document.getElementById(id); if(el) el.textContent = label; });
+}
+function toggleTheme(){ applyTheme(getCurrentTheme() === "dark" ? "light" : "dark"); }
+
+function showPage(id){
+  document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+  const p = document.getElementById(id);
+  if(p) p.classList.add("active");
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function switchLoginTab(tab){
+  document.querySelectorAll(".login-tab").forEach(t => t.classList.toggle("active", t.dataset.tab === tab));
+  document.getElementById("coachLoginBox").style.display = tab === "coach" ? "block" : "none";
+  document.getElementById("adminLoginBox").style.display = tab === "admin" ? "block" : "none";
+}
+
+async function loadHalqasForLogin(){
+  const sel = document.getElementById("halqaSelect");
+  if(!sel) return;
+  const { data, error } = await db.from("halqas").select("*").order("name");
+  if(error){ console.error(error); return; }
+  allHalqas = data || [];
+  sel.innerHTML = '<option value="">— انتخاب حلقه —</option>' + allHalqas.map(h => `<option value="${h.id}">${esc(h.name)}</option>`).join("");
+}
+
+async function coachLogin(){
+  const halqaId = document.getElementById("halqaSelect").value;
+  const password = document.getElementById("coachPassword").value.trim();
+  const msg = document.getElementById("loginMsg");
+  if(!halqaId){ msg.textContent = "لطفاً حلقه رو انتخاب کن"; msg.className = "msg err"; return; }
+  if(!password){ msg.textContent = "رمز رو وارد کن"; msg.className = "msg err"; return; }
+  msg.textContent = "بررسی..."; msg.className = "msg";
+  const { data, error } = await db.rpc("coach_login", { p_halqa_id: parseInt(halqaId), p_password: password });
+  if(error){ msg.textContent = "خطا: " + error.message; msg.className = "msg err"; return; }
+  if(!data || !data.length){ msg.textContent = "❌ رمز اشتباه"; msg.className = "msg err"; return; }
+  currentCoach = data[0];
+  currentAdmin = false;
+  try { localStorage.setItem("halqa_coach", JSON.stringify(currentCoach)); } catch(e){}
+  await loadFields();
+  document.getElementById("coachHalqaName").textContent = currentCoach.name;
+  await renderCoachMembers();
+  await renderCoachSessions();
+  await renderCoachPhotos();
+  await renderCoachProfile();
+  showPage("coachPage");
+  msg.textContent = "";
+}
+
+async function adminLogin(){
+  const password = document.getElementById("adminPassword").value.trim();
+  const msg = document.getElementById("loginMsg");
+  if(password !== ADMIN_PASSWORD){ msg.textContent = "❌ رمز اشتباه"; msg.className = "msg err"; return; }
+  currentAdmin = true;
+  currentCoach = null;
+  try { localStorage.setItem("halqa_admin", "1"); } catch(e){}
+  await loadFields();
+  await loadAdminHalqas();
+  await renderFields();
+  await renderAllMembers();
+  await renderAdminSessions();
+  showPage("adminPage");
+  msg.textContent = "";
+}
+
+function logout(){
+  currentCoach = null;
+  currentAdmin = false;
+  try { localStorage.removeItem("halqa_coach"); localStorage.removeItem("halqa_admin"); } catch(e){}
+  document.getElementById("coachPassword").value = "";
+  document.getElementById("adminPassword").value = "";
+  document.getElementById("loginMsg").textContent = "";
+  loadHalqasForLogin();
+  showPage("loginPage");
+}
+
+async function autoLogin(){
+  try {
+    if(localStorage.getItem("halqa_admin") === "1"){
+      currentAdmin = true;
+      await loadFields();
+      await loadAdminHalqas();
+      await renderFields();
+      await renderAllMembers();
+      await renderAdminSessions();
+      showPage("adminPage");
+      return;
+    }
+    const coachSaved = localStorage.getItem("halqa_coach");
+    if(coachSaved){
+      const c = JSON.parse(coachSaved);
+      const { data } = await db.from("halqas").select("*").eq("id", c.id).limit(1);
+      if(data && data.length){
+        currentCoach = data[0];
+        await loadFields();
+        document.getElementById("coachHalqaName").textContent = currentCoach.name;
+        await renderCoachMembers();
+        await renderCoachSessions();
+        await renderCoachPhotos();
+        await renderCoachProfile();
+        showPage("coachPage");
+        return;
+      } else { localStorage.removeItem("halqa_coach"); }
+    }
+  } catch(e){ console.error(e); }
+  await loadHalqasForLogin();
+}
+
+async function loadFields(){
+  const { data, error } = await db.from("halqa_field_defs").select("*").order("sort_order");
+  if(error){ console.error(error); return; }
+  allFields = (data || []).filter(f => f.is_active !== false);
+  const ff = document.getElementById("adminFilterField");
+  if(ff) ff.innerHTML = '<option value="">فیلتر بر اساس فیلد</option>' + allFields.map(f => `<option value="${f.field_key}">${esc(f.field_label)}</option>`).join("");
+  const cf = document.getElementById("coachFilterField");
+  if(cf) cf.innerHTML = '<option value="">فیلتر بر اساس فیلد</option>' + allFields.map(f => `<option value="${f.field_key}">${esc(f.field_label)}</option>`).join("");
+}
+
+function qualityClass(q){
+  if(q === "بیش فعال") return "q-over";
+  if(q === "فعال") return "q-active";
+  if(q === "فعالیت کم") return "q-low";
+  if(q === "غیر فعال") return "q-inactive";
+  return "";
+}
+
+function switchAdminSection(section){
+  document.querySelectorAll("#adminPage .panel-tab").forEach(t => t.classList.toggle("active", t.dataset.section === section));
+  document.querySelectorAll("#adminPage .panel-section").forEach(s => s.classList.remove("active"));
+  const el = document.getElementById("adminSection-" + section);
+  if(el) el.classList.add("active");
+}
+
+function switchCoachSection(section){
+  document.querySelectorAll("#coachPage .panel-tab").forEach(t => t.classList.toggle("active", t.dataset.section === section));
+  document.querySelectorAll("#coachPage .panel-section").forEach(s => s.classList.remove("active"));
+  const el = document.getElementById("coachSection-" + section);
+  if(el) el.classList.add("active");
+}
+
+async function loadAdminHalqas(){
+  const { data, error } = await db.from("halqas").select("*").order("created_at", {ascending:false});
+  if(error){ console.error(error); return; }
+  allHalqas = data || [];
+  const list = document.getElementById("halqasList");
+  if(!list) return;
+  if(!allHalqas.length){
+    list.innerHTML = `<div class="empty-state" style="grid-column:1/-1"><span class="icon">📁</span>هنوز حلقه‌ای ساخته نشده</div>`;
+    return;
+  }
+  const { data: membersCounts } = await db.from("halqa_members").select("halqa_id");
+  const counts = {};
+  (membersCounts || []).forEach(m => { counts[m.halqa_id] = (counts[m.halqa_id] || 0) + 1; });
+  list.innerHTML = allHalqas.map(h => `
+    <div class="halqa-card">
+      <div class="halqa-cover">${h.cover_url ? `<img src="${esc(h.cover_url)}" alt="">` : "📁"}</div>
+      <div class="halqa-body">
+        <h4>${esc(h.name)}</h4>
+        ${h.coach_name ? `<div class="halqa-info">👨‍🏫 مربی: ${esc(h.coach_name)}</div>` : ""}
+        <div class="halqa-info">👥 تعداد اعضا: ${fa(counts[h.id] || 0)}</div>
+        ${h.description ? `<div class="halqa-desc">${esc(h.description)}</div>` : ""}
+        <div class="halqa-pass">🔑 ${esc(h.password)}</div>
+        <div class="halqa-actions">
+          <button class="btn btn-sm" onclick="openHalqaModal(${h.id})">✏ ویرایش</button>
+          <button class="btn btn-sm btn-danger" onclick="deleteHalqa(${h.id}, '${esc(h.name)}')">🗑 حذف</button>
+        </div>
+      </div>
+    </div>
+  `).join("");
+  const filterH = document.getElementById("adminFilterHalqa");
+  if(filterH) filterH.innerHTML = '<option value="">همه‌ی حلقه‌ها</option>' + allHalqas.map(h => `<option value="${h.id}">${esc(h.name)}</option>`).join("");
+  const sessionFH = document.getElementById("adminSessionFilterHalqa");
+  if(sessionFH) sessionFH.innerHTML = '<option value="">همه‌ی حلقه‌ها</option>' + allHalqas.map(h => `<option value="${h.id}">${esc(h.name)}</option>`).join("");
+  const sessHalqaSel = document.getElementById("sessionHalqaId");
+  if(sessHalqaSel) sessHalqaSel.innerHTML = '<option value="">— انتخاب حلقه —</option>' + allHalqas.map(h => `<option value="${h.id}">${esc(h.name)}</option>`).join("");
+}
+
+function openHalqaModal(id){
+  const modal = document.getElementById("halqaModal");
+  const title = document.getElementById("halqaModalTitle");
+  document.getElementById("halqaEditId").value = "";
+  document.getElementById("halqaName").value = "";
+  document.getElementById("halqaPassword").value = "";
+  document.getElementById("halqaCoach").value = "";
+  document.getElementById("halqaDesc").value = "";
+  document.getElementById("halqaCover").value = "";
+  document.getElementById("halqaCoverPreview").innerHTML = "🖼";
+  if(id){
+    const h = allHalqas.find(x => x.id === id);
+    if(h){
+      title.textContent = "✏ ویرایش حلقه";
+      document.getElementById("halqaEditId").value = h.id;
+      document.getElementById("halqaName").value = h.name || "";
+      document.getElementById("halqaPassword").value = h.password || "";
+      document.getElementById("halqaCoach").value = h.coach_name || "";
+      document.getElementById("halqaDesc").value = h.description || "";
+      if(h.cover_url) document.getElementById("halqaCoverPreview").innerHTML = `<img src="${esc(h.cover_url)}">`;
+    }
+  } else { title.textContent = "📁 حلقه جدید"; }
+  modal.classList.add("open");
+}
+
+async function saveHalqa(){
+  const id = document.getElementById("halqaEditId").value;
+  const name = document.getElementById("halqaName").value.trim();
+  const password = document.getElementById("halqaPassword").value.trim();
+  const coach_name = document.getElementById("halqaCoach").value.trim();
+  const description = document.getElementById("halqaDesc").value.trim();
+  const coverFile = document.getElementById("halqaCover").files[0];
+  if(!name || !password){ alert("نام و رمز الزامی"); return; }
+  let cover_url = null;
+  if(coverFile){
+    if(coverFile.size > 3*1024*1024){ alert("عکس کمتر از ۳ مگابایت"); return; }
+    const ext = coverFile.name.split(".").pop();
+    const fn = "halqa_cover_" + Date.now() + "." + ext;
+    const { error: ue } = await db.storage.from("halqa").upload(fn, coverFile);
+    if(ue){ alert("خطای آپلود عکس: " + ue.message); return; }
+    cover_url = db.storage.from("halqa").getPublicUrl(fn).data.publicUrl;
+  } else if(id){
+    const h = allHalqas.find(x => x.id === id);
+    if(h) cover_url = h.cover_url;
+  }
+  const payload = { name, password, coach_name: coach_name || null, description: description || null, cover_url };
+  if(id){
+    const { error } = await db.from("halqas").update(payload).eq("id", parseInt(id));
+    if(error){ alert("خطا: " + error.message); return; }
+  } else {
+    const { error } = await db.from("halqas").insert([payload]);
+    if(error){ alert("خطا: " + error.message); return; }
+  }
+  closeModal("halqaModal");
+  await loadAdminHalqas();
+  await loadHalqasForLogin();
+  alert("✅ ذخیره شد");
+}
+
+async function deleteHalqa(id, name){
+  if(!confirm(`حلقه‌ی «${name}» و همه‌ی اعضاش حذف بشن؟`)) return;
+  const { error } = await db.from("halqas").delete().eq("id", id);
+  if(error){ alert("خطا: " + error.message); return; }
+  await loadAdminHalqas();
+  await loadHalqasForLogin();
+  await renderAllMembers();
+  await renderAdminSessions();
+  alert("✅ حذف شد");
+}
+
+async function renderFields(){
+  const { data, error } = await db.from("halqa_field_defs").select("*").order("sort_order");
+  if(error){ console.error(error); return; }
+  const list = document.getElementById("fieldsList");
+  if(!list) return;
+  if(!data || !data.length){
+    list.innerHTML = `<div class="empty-state"><span class="icon">⚙️</span>هنوز فیلدی تعریف نشده</div>`;
+    return;
+  }
+  const typeNames = { text: "متن", textarea: "متن بلند", number: "عدد", select: "انتخاب یک", multiselect: "چند انتخابی" };
+  list.innerHTML = data.map(f => {
+    const isInactive = f.is_active === false;
+    return `
+      <div class="field-item ${isInactive ? 'inactive' : ''}">
+        <div class="field-info">
+          <h5>${esc(f.field_label)} ${isInactive ? '<span class="field-tag" style="background:#888">غیرفعال</span>' : ''}</h5>
+          <div class="field-meta">کلید: ${esc(f.field_key)} • نوع: ${typeNames[f.field_type] || f.field_type} • ترتیب: ${fa(f.sort_order)} ${f.is_required ? ' • <span style="color:#c94f4f">الزامی</span>' : ''}</div>
+        </div>
+        <div class="field-actions">
+          <button class="btn btn-sm" onclick="openFieldModal(${f.id})">✏ ویرایش</button>
+          <button class="btn btn-sm ${isInactive ? 'btn-success' : 'btn-secondary'}" onclick="toggleFieldActive(${f.id}, ${!isInactive})">${isInactive ? '✅ فعال' : '⏸ غیرفعال'}</button>
+          <button class="btn btn-sm btn-danger" onclick="deleteField(${f.id}, '${esc(f.field_label)}')">🗑</button>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+function openFieldModal(id){
+  const modal = document.getElementById("fieldModal");
+  const title = document.getElementById("fieldModalTitle");
+  document.getElementById("fieldEditId").value = "";
+  document.getElementById("fieldLabel").value = "";
+  document.getElementById("fieldKey").value = "";
+  document.getElementById("fieldType").value = "text";
+  document.getElementById("fieldOptions").value = "";
+  document.getElementById("fieldOrder").value = "10";
+  document.getElementById("fieldRequired").checked = false;
+  document.getElementById("fieldOptionsRow").style.display = "none";
+  if(id){
+    db.from("halqa_field_defs").select("*").eq("id", id).single().then(({data}) => {
+      if(data){
+        title.textContent = "✏ ویرایش فیلد";
+        document.getElementById("fieldEditId").value = data.id;
+        document.getElementById("fieldLabel").value = data.field_label;
+        document.getElementById("fieldKey").value = data.field_key;
+        document.getElementById("fieldKey").disabled = true;
+        document.getElementById("fieldType").value = data.field_type;
+        document.getElementById("fieldOptions").value = (data.options || []).join("، ");
+        document.getElementById("fieldOrder").value = data.sort_order;
+        document.getElementById("fieldRequired").checked = !!data.is_required;
+        onFieldTypeChange();
+      }
+    });
+  } else {
+    title.textContent = "⚙️ فیلد جدید";
+    document.getElementById("fieldKey").disabled = false;
+  }
+  modal.classList.add("open");
+}
+
+function onFieldTypeChange(){
+  const type = document.getElementById("fieldType").value;
+  document.getElementById("fieldOptionsRow").style.display = (type === "select" || type === "multiselect") ? "block" : "none";
+}
+
+async function saveField(){
+  const id = document.getElementById("fieldEditId").value;
+  const label = document.getElementById("fieldLabel").value.trim();
+  const key = document.getElementById("fieldKey").value.trim();
+  const type = document.getElementById("fieldType").value;
+  const optionsStr = document.getElementById("fieldOptions").value.trim();
+  const order = parseInt(document.getElementById("fieldOrder").value) || 10;
+  const required = document.getElementById("fieldRequired").checked;
+  if(!label || !key){ alert("عنوان و کلید الزامی"); return; }
+  if(!/^[a-z0-9_]+$/.test(key)){ alert("کلید فقط حروف کوچک انگلیسی، عدد و _"); return; }
+  let options = [];
+  if(type === "select" || type === "multiselect") options = optionsStr.split(/[،,]/).map(s => s.trim()).filter(s => s);
+  const payload = { field_label: label, field_key: key, field_type: type, options, is_required: required, sort_order: order, is_active: true };
+  if(id){
+    const { error } = await db.from("halqa_field_defs").update(payload).eq("id", parseInt(id));
+    if(error){ alert("خطا: " + error.message); return; }
+  } else {
+    const { error } = await db.from("halqa_field_defs").insert([payload]);
+    if(error){ alert("خطا: " + error.message); return; }
+  }
+  closeModal("fieldModal");
+  await loadFields();
+  await renderFields();
+  alert("✅ ذخیره شد");
+}
+
+async function toggleFieldActive(id, active){
+  const { error } = await db.from("halqa_field_defs").update({ is_active: active }).eq("id", id);
+  if(error){ alert("خطا: " + error.message); return; }
+  await loadFields();
+  await renderFields();
+}
+
+async function deleteField(id, name){
+  if(!confirm(`فیلد «${name}» حذف بشه؟`)) return;
+  const { error } = await db.from("halqa_field_defs").delete().eq("id", id);
+  if(error){ alert("خطا: " + error.message); return; }
+  await loadFields();
+  await renderFields();
+  alert("✅ حذف شد");
+}
+
+function buildMemberFormFields(data){
+  const container = document.getElementById("memberFormFields");
+  if(!container) return;
+  if(!allFields.length){
+    container.innerHTML = `<div class="empty-state"><span class="icon">⚙️</span>هنوز فیلدی تعریف نشده. اول از پنل مدیر فیلد بساز.</div>`;
+    return;
+  }
+  container.innerHTML = allFields.map(f => {
+    const val = data ? (data[f.field_key] || "") : "";
+    const required = f.is_required ? 'required' : '';
+    const star = f.is_required ? '<span class="required">*</span>' : '';
+    let input = "";
+    if(f.field_type === "text") input = `<input id="mf_${f.field_key}" value="${esc(val)}" ${required}>`;
+    else if(f.field_type === "textarea") input = `<textarea id="mf_${f.field_key}" rows="3" ${required}>${esc(val)}</textarea>`;
+    else if(f.field_type === "number") input = `<input id="mf_${f.field_key}" type="number" value="${esc(val)}" ${required}>`;
+    else if(f.field_type === "select"){
+      const opts = f.options || [];
+      input = `<select id="mf_${f.field_key}" ${required}><option value="">— انتخاب —</option>${opts.map(o => `<option value="${esc(o)}" ${o === val ? 'selected' : ''}>${esc(o)}</option>`).join("")}</select>`;
+    } else if(f.field_type === "multiselect"){
+      const opts = f.options || [];
+      const vals = Array.isArray(val) ? val : [];
+      input = `<div class="checkbox-group" data-key="${f.field_key}">${opts.map(o => `<label class="checkbox-item ${vals.includes(o) ? 'checked' : ''}"><input type="checkbox" value="${esc(o)}" ${vals.includes(o) ? 'checked' : ''}>${esc(o)}</label>`).join("")}</div>`;
+    }
+    return `<div class="form-row"><label>${esc(f.field_label)} ${star}</label>${input}</div>`;
+  }).join("");
+  container.querySelectorAll(".checkbox-item").forEach(item => {
+    item.addEventListener("click", e => {
+      e.preventDefault();
+      const cb = item.querySelector("input");
+      cb.checked = !cb.checked;
+      item.classList.toggle("checked", cb.checked);
+    });
+  });
+}
+
+function openMemberModal(id){
+  const modal = document.getElementById("memberModal");
+  const title = document.getElementById("memberModalTitle");
+  document.getElementById("memberEditId").value = "";
+  if(id) title.textContent = "✏ ویرایش عضو";
+  else title.textContent = "👤 عضو جدید";
+  buildMemberFormFields(null);
+  if(id){
+    const cached = (window._cachedMembers || []).find(m => m.id === id);
+    if(cached){
+      document.getElementById("memberEditId").value = cached.id;
+      buildMemberFormFields(cached.data || {});
+    }
+  }
+  modal.classList.add("open");
+}
+
+async function saveMember(){
+  if(!currentCoach){ alert("اول وارد حلقه شو"); return; }
+  const id = document.getElementById("memberEditId").value;
+  const data = {};
+  for(const f of allFields){
+    if(f.field_type === "multiselect"){
+      const box = document.querySelector(`.checkbox-group[data-key="${f.field_key}"]`);
+      if(box) data[f.field_key] = Array.from(box.querySelectorAll("input:checked")).map(cb => cb.value);
+      else data[f.field_key] = [];
+    } else {
+      const el = document.getElementById(`mf_${f.field_key}`);
+      if(el) data[f.field_key] = el.value.trim();
+    }
+    if(f.is_required){
+      const v = data[f.field_key];
+      if(f.field_type === "multiselect"){
+        if(!v || !v.length){ alert(`فیلد «${f.field_label}» الزامی`); return; }
+      } else if(!v){ alert(`فیلد «${f.field_label}» الزامی`); return; }
+    }
+  }
+  if(id){
+    const { error } = await db.from("halqa_members").update({ data, updated_at: new Date().toISOString() }).eq("id", parseInt(id));
+    if(error){ alert("خطا: " + error.message); return; }
+  } else {
+    const { error } = await db.from("halqa_members").insert([{ halqa_id: currentCoach.id, data }]);
+    if(error){ alert("خطا: " + error.message); return; }
+  }
+  closeModal("memberModal");
+  await renderCoachMembers();
+  alert("✅ ذخیره شد");
+}
+
+async function deleteMember(id){
+  if(!confirm("این عضو حذف بشه؟")) return;
+  const { error } = await db.from("halqa_members").delete().eq("id", id);
+  if(error){ alert("خطا: " + error.message); return; }
+  await renderCoachMembers();
+}
+
+async function renderCoachMembers(){
+  if(!currentCoach) return;
+  const { data, error } = await db.from("halqa_members").select("*").eq("halqa_id", currentCoach.id).order("created_at", {ascending:false});
+  if(error){ console.error(error); return; }
+  window._cachedMembers = data || [];
+  renderMembersCards(data || [], "coachMembersCards", "coachMembersEmpty", "coachSearch", "coachFilterField", "coachFilterValue", true);
+}
+
+function renderMembersCards(members, containerId, emptyId, searchId, filterFieldId, filterValueId, showActions){
+  const container = document.getElementById(containerId);
+  const empty = document.getElementById(emptyId);
+  if(!container) return;
+  const q = (document.getElementById(searchId)?.value || "").trim().toLowerCase();
+  const filterKey = document.getElementById(filterFieldId)?.value || "";
+  const filterVal = (document.getElementById(filterValueId)?.value || "");
+  let list = [...members];
+  if(q){
+    list = list.filter(m => {
+      for(const k in (m.data || {})){
+        const v = m.data[k];
+        const str = Array.isArray(v) ? v.join(" ") : String(v || "");
+        if(str.toLowerCase().includes(q)) return true;
+      }
+      return false;
+    });
+  }
+  if(filterKey && filterVal){
+    list = list.filter(m => {
+      const v = (m.data || {})[filterKey];
+      const str = Array.isArray(v) ? v : [String(v || "")];
+      return str.includes(filterVal);
+    });
+  }
+  if(!list.length){
+    container.innerHTML = "";
+    if(empty) empty.style.display = "block";
+    return;
+  }
+  if(empty) empty.style.display = "none";
+  const nameField = allFields.find(f => f.field_key === "full_name") || allFields[0];
+  const phoneField = allFields.find(f => f.field_key === "phone");
+  const qualityField = allFields.find(f => f.field_key === "quality");
+  container.innerHTML = list.map(m => {
+    const d = m.data || {};
+    const name = nameField ? (d[nameField.field_key] || "بدون نام") : "بدون نام";
+    const phone = phoneField ? (d[phoneField.field_key] || "") : "";
+    const quality = qualityField ? (d[qualityField.field_key] || "") : "";
+    const initial = String(name).charAt(0);
+    return `<div class="member-card">
+      <div class="mc-avatar">${esc(initial)}</div>
+      <div class="mc-name">${esc(name)}</div>
+      ${phone ? `<div class="mc-row">📱 ${esc(phone)}</div>` : ""}
+      ${quality ? `<span class="mc-quality ${qualityClass(quality)}">🎖 ${esc(quality)}</span>` : ""}
+      <div class="mc-actions">
+        <button style="background:#1e6bb8" onclick="viewMember(${m.id})">👁 مشاهده</button>
+        ${showActions ? `<button style="background:#c48b1f" onclick="openMemberModal(${m.id})">✏</button>
+        <button style="background:#c94f4f" onclick="deleteMember(${m.id})">🗑</button>` : ""}
+      </div>
+    </div>`;
+  }).join("");
+}
+
+async function renderAllMembers(){
+  if(!currentAdmin) return;
+  const { data, error } = await db.from("halqa_members").select("*").order("created_at", {ascending:false});
+  if(error){ console.error(error); return; }
+  window._cachedMembers = data || [];
+  const filterHalqa = document.getElementById("adminFilterHalqa")?.value || "";
+  let list = data || [];
+  if(filterHalqa) list = list.filter(m => m.halqa_id === parseInt(filterHalqa));
+  const q = (document.getElementById("adminSearch")?.value || "").trim().toLowerCase();
+  const filterKey = document.getElementById("adminFilterField")?.value || "";
+  const filterVal = document.getElementById("adminFilterValue")?.value || "";
+  if(q){
+    list = list.filter(m => {
+      for(const k in (m.data || {})){
+        const v = m.data[k];
+        const str = Array.isArray(v) ? v.join(" ") : String(v || "");
+        if(str.toLowerCase().includes(q)) return true;
+      }
+      return false;
+    });
+  }
+  if(filterKey && filterVal){
+    list = list.filter(m => {
+      const v = (m.data || {})[filterKey];
+      const str = Array.isArray(v) ? v : [String(v || "")];
+      return str.includes(filterVal);
+    });
+  }
+  const container = document.getElementById("allMembersCards");
+  const empty = document.getElementById("allMembersEmpty");
+  if(!container) return;
+  if(!list.length){ container.innerHTML = ""; if(empty) empty.style.display = "block"; return; }
+  if(empty) empty.style.display = "none";
+  const nameField = allFields.find(f => f.field_key === "full_name") || allFields[0];
+  const phoneField = allFields.find(f => f.field_key === "phone");
+  const qualityField = allFields.find(f => f.field_key === "quality");
+  const halqaMap = {};
+  allHalqas.forEach(h => { halqaMap[h.id] = h.name; });
+  container.innerHTML = list.map(m => {
+    const d = m.data || {};
+    const name = nameField ? (d[nameField.field_key] || "بدون نام") : "بدون نام";
+    const phone = phoneField ? (d[phoneField.field_key] || "") : "";
+    const quality = qualityField ? (d[qualityField.field_key] || "") : "";
+    const halqaName = halqaMap[m.halqa_id] || "—";
+    return `<div class="member-card">
+      <div class="mc-avatar">${esc(String(name).charAt(0))}</div>
+      <div class="mc-name">${esc(name)}</div>
+      <div class="mc-row">📁 ${esc(halqaName)}</div>
+      ${phone ? `<div class="mc-row">📱 ${esc(phone)}</div>` : ""}
+      ${quality ? `<span class="mc-quality ${qualityClass(quality)}">🎖 ${esc(quality)}</span>` : ""}
+      <div class="mc-actions"><button style="background:#1e6bb8" onclick="viewMember(${m.id})">👁 مشاهده</button></div>
+    </div>`;
+  }).join("");
+}
+
+function renderCoachFilterValue(){
+  const key = document.getElementById("coachFilterField")?.value || "";
+  const box = document.getElementById("coachFilterValue");
+  if(!box) return;
+  if(!key){ box.style.display = "none"; box.innerHTML = ""; renderCoachMembers(); return; }
+  const f = allFields.find(x => x.field_key === key);
+  if(!f || !f.options || !f.options.length){ box.style.display = "none"; box.innerHTML = ""; renderCoachMembers(); return; }
+  box.style.display = "block";
+  box.innerHTML = `<option value="">— همه —</option>` + f.options.map(o => `<option value="${esc(o)}">${esc(o)}</option>`).join("");
+  renderCoachMembers();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const f = document.getElementById("adminFilterField");
+  if(f){
+    f.addEventListener("change", () => {
+      const key = f.value;
+      const box = document.getElementById("adminFilterValueBox");
+      const sel = document.getElementById("adminFilterValue");
+      if(!key){ box.style.display = "none"; sel.innerHTML = ""; renderAllMembers(); return; }
+      const ff = allFields.find(x => x.field_key === key);
+      if(!ff || !ff.options || !ff.options.length){ box.style.display = "none"; sel.innerHTML = ""; renderAllMembers(); return; }
+      box.style.display = "block";
+      sel.innerHTML = `<option value="">— همه —</option>` + ff.options.map(o => `<option value="${esc(o)}">${esc(o)}</option>`).join("");
+      renderAllMembers();
+    });
+  }
+});
+
+async function viewMember(id){
+  const { data, error } = await db.from("halqa_members").select("*").eq("id", id).single();
+  if(error || !data){ alert("خطا در بارگذاری"); return; }
+  const content = document.getElementById("viewMemberContent");
+  const halqa = allHalqas.find(h => h.id === data.halqa_id);
+  let html = "";
+  if(halqa) html += `<div class="form-row"><label>حلقه</label><div style="background:var(--bg-soft);padding:10px 12px;border-radius:8px">${esc(halqa.name)}</div></div>`;
+  allFields.forEach(f => {
+    const v = (data.data || {})[f.field_key];
+    let show = "—";
+    if(Array.isArray(v)) show = v.length ? v.join("، ") : "—";
+    else if(v !== undefined && v !== null && v !== "") show = v;
+    html += `<div class="form-row"><label>${esc(f.field_label)}</label><div style="background:var(--bg-soft);padding:10px 12px;border-radius:8px">${esc(show)}</div></div>`;
+  });
+  content.innerHTML = html;
+  document.getElementById("viewMemberModal").classList.add("open");
+}
+
+function exportToExcel(members, filename){
+  if(!members.length){ alert("داده‌ای نیست"); return; }
+  let csv = "\uFEFF";
+  const headers = ["حلقه", ...allFields.map(f => f.field_label)];
+  csv += headers.map(h => `"${h}"`).join(",") + "\n";
+  const halqaMap = {};
+  allHalqas.forEach(h => { halqaMap[h.id] = h.name; });
+  members.forEach(m => {
+    const row = [halqaMap[m.halqa_id] || "—"];
+    allFields.forEach(f => {
+      let v = (m.data || {})[f.field_key];
+      if(Array.isArray(v)) v = v.join("، ");
+      row.push(v || "");
+    });
+    csv += row.map(x => `"${String(x).replace(/"/g, '""')}"`).join(",") + "\n";
+  });
+  const blob = new Blob([csv], {type:"text/csv;charset=utf-8;"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+function exportCoachToExcel(){ exportToExcel(window._cachedMembers || [], `حلقه-${currentCoach.name}.csv`); }
+function exportAllToExcel(){ exportToExcel(window._cachedMembers || [], "همه-اعضا.csv"); }
+
+function closeModal(id){ document.getElementById(id).classList.remove("open"); }
+document.querySelectorAll(".modal-bg").forEach(bg => {
+  bg.addEventListener("click", e => { if(e.target === bg) bg.classList.remove("open"); });
+});
+document.addEventListener("keydown", e => {
+  if(e.key === "Escape"){
+    document.querySelectorAll(".modal-bg.open").forEach(m => m.classList.remove("open"));
+    closeLightbox();
+  }
+});
+
+function openLightbox(index){
+  lbIndex = index;
+  document.getElementById("lbImg").src = currentPhotos[index].url;
+  document.getElementById("lbCaption").textContent = currentPhotos[index].caption || "";
+  document.getElementById("lightbox").classList.add("open");
+}
+function closeLightbox(){ document.getElementById("lightbox").classList.remove("open"); }
+
+function openSessionModal(){
+  document.getElementById("sessionTitle").value = "";
+  document.getElementById("sessionDate").value = "";
+  document.getElementById("sessionModal").classList.add("open");
+}
+
+async function saveSession(){
+  const halqaId = document.getElementById("sessionHalqaId").value;
+  const title = document.getElementById("sessionTitle").value.trim();
+  const date = document.getElementById("sessionDate").value.trim();
+  if(!halqaId || !title){ alert("حلقه و عنوان الزامی"); return; }
+  const { error } = await db.from("halqa_sessions").insert([{ halqa_id: parseInt(halqaId), title, session_date: date || null }]);
+  if(error){ alert("خطا: " + error.message); return; }
+  closeModal("sessionModal");
+  await renderAdminSessions();
+  alert("✅ جلسه ساخته شد");
+}
+
+async function renderAdminSessions(){
+  if(!currentAdmin) return;
+  const filterH = document.getElementById("adminSessionFilterHalqa")?.value || "";
+  let q = db.from("halqa_sessions").select("*").order("created_at", {ascending:false});
+  if(filterH) q = q.eq("halqa_id", parseInt(filterH));
+  const { data, error } = await q;
+  if(error){ console.error(error); return; }
+  const { data: atts } = await db.from("halqa_attendance").select("session_id, status");
+  const attCounts = {};
+  (atts || []).forEach(a => { attCounts[a.session_id] = (attCounts[a.session_id] || 0) + 1; });
+  const container = document.getElementById("adminSessionsList");
+  const empty = document.getElementById("adminSessionsEmpty");
+  if(!container) return;
+  if(!data || !data.length){ container.innerHTML = ""; if(empty) empty.style.display = "block"; return; }
+  if(empty) empty.style.display = "none";
+  const halqaMap = {};
+  allHalqas.forEach(h => { halqaMap[h.id] = h.name; });
+  container.innerHTML = data.map(s => `
+    <div class="session-item">
+      <div class="si-info">
+        <h4>📅 ${esc(s.title)}</h4>
+        <div class="si-meta">📁 ${esc(halqaMap[s.halqa_id] || "—")} ${s.session_date ? ` • ${esc(s.session_date)}` : ""} • ثبت‌شده: ${fa(attCounts[s.id] || 0)}</div>
+      </div>
+      <div class="si-actions">
+        <button class="btn btn-sm" style="background:#1e6bb8" onclick="openAttendance(${s.id}, '${esc(s.title)}', ${s.halqa_id})">📋 حضور و غیاب</button>
+        <button class="btn btn-sm btn-danger" onclick="deleteSession(${s.id})">🗑</button>
+      </div>
+    </div>
+  `).join("");
+}
+
+async function renderCoachSessions(){
+  if(!currentCoach) return;
+  const { data, error } = await db.from("halqa_sessions").select("*").eq("halqa_id", currentCoach.id).order("created_at", {ascending:false});
+  if(error){ console.error(error); return; }
+  const ids = (data || []).map(s => s.id);
+  let atts = [];
+  if(ids.length){
+    const r = await db.from("halqa_attendance").select("session_id, status").in("session_id", ids);
+    atts = r.data || [];
+  }
+  const attCounts = {};
+  atts.forEach(a => { attCounts[a.session_id] = (attCounts[a.session_id] || 0) + 1; });
+  const container = document.getElementById("coachSessionsList");
+  const empty = document.getElementById("coachSessionsEmpty");
+  if(!container) return;
+  if(!data || !data.length){ container.innerHTML = ""; if(empty) empty.style.display = "block"; return; }
+  if(empty) empty.style.display = "none";
+  container.innerHTML = data.map(s => `
+    <div class="session-item">
+      <div class="si-info">
+        <h4>📅 ${esc(s.title)}</h4>
+        <div class="si-meta">${s.session_date ? `${esc(s.session_date)} • ` : ""}ثبت‌شده: ${fa(attCounts[s.id] || 0)}</div>
+      </div>
+      <div class="si-actions">
+        <button class="btn btn-sm" style="background:#1e6bb8" onclick="openAttendance(${s.id}, '${esc(s.title)}', ${s.halqa_id})">📋 حضور و غیاب</button>
+      </div>
+    </div>
+  `).join("");
+}
+
+async function deleteSession(id){
+  if(!confirm("این جلسه و حضور و غیاب‌هاش حذف بشن؟")) return;
+  const { error } = await db.from("halqa_sessions").delete().eq("id", id);
+  if(error){ alert("خطا: " + error.message); return; }
+  await renderAdminSessions();
+  await renderCoachSessions();
+}
+
+async function openAttendance(sessionId, title, halqaId){
+  document.getElementById("attendanceModalTitle").textContent = "📋 " + title;
+  const container = document.getElementById("attendanceList");
+  container.innerHTML = "<p style='text-align:center;color:var(--text-mute)'>بارگذاری...</p>";
+  const { data: members } = await db.from("halqa_members").select("*").eq("halqa_id", halqaId).order("created_at");
+  const { data: atts } = await db.from("halqa_attendance").select("*").eq("session_id", sessionId);
+  if(!members || !members.length){
+    container.innerHTML = "<p style='text-align:center;color:var(--text-mute)'>این حلقه عضوی نداره</p>";
+    document.getElementById("attendanceModal").classList.add("open");
+    return;
+  }
+  const nameField = allFields.find(f => f.field_key === "full_name") || allFields[0];
+  container.innerHTML = members.map(m => {
+    const name = nameField ? ((m.data || {})[nameField.field_key] || "بدون نام") : "بدون نام";
+    const att = (atts || []).find(a => a.member_id === m.id);
+    const status = att ? att.status : "";
+    const rating = att ? (att.rating || "") : "";
+    const opts = QUALITY_OPTIONS.map(q => `<option value="${esc(q)}" ${q === rating ? 'selected' : ''}>${esc(q)}</option>`).join("");
+    return `<div class="attendance-row" data-member="${m.id}">
+      <div class="att-name">${esc(name)}</div>
+      <div class="att-options">
+        <button class="att-btn ${status === 'present' ? 'active-present' : ''}" onclick="setAttStatus(${sessionId}, ${m.id}, 'present', this)">✅ حاضر</button>
+        <button class="att-btn ${status === 'absent' ? 'active-absent' : ''}" onclick="setAttStatus(${sessionId}, ${m.id}, 'absent', this)">❌ غایب</button>
+        <button class="att-btn ${status === 'late' ? 'active-late' : ''}" onclick="setAttStatus(${sessionId}, ${m.id}, 'late', this)">⏰ تأخیر</button>
+      </div>
+      <select class="att-rating-select" onchange="setAttRating(${sessionId}, ${m.id}, this.value)">
+        <option value="">— نمره کیفی —</option>${opts}
+      </select>
+    </div>`;
+  }).join("");
+  document.getElementById("attendanceModal").classList.add("open");
+}
+
+async function setAttStatus(sessionId, memberId, status, btn){
+  const row = btn.closest(".attendance-row");
+  row.querySelectorAll(".att-btn").forEach(b => b.classList.remove("active-present","active-absent","active-late"));
+  if(status === "present") btn.classList.add("active-present");
+  else if(status === "absent") btn.classList.add("active-absent");
+  else if(status === "late") btn.classList.add("active-late");
+  const ratingSelect = row.querySelector(".att-rating-select");
+  const rating = ratingSelect ? ratingSelect.value : "";
+  const { error } = await db.from("halqa_attendance").upsert({
+    session_id: sessionId, member_id: memberId, status, rating: rating || null
+  }, { onConflict: "session_id,member_id" });
+  if(error){ alert("خطا: " + error.message); }
+}
+
+async function setAttRating(sessionId, memberId, rating){
+  const row = document.querySelector(`.attendance-row[data-member="${memberId}"]`);
+  let status = "present";
+  if(row){
+    if(row.querySelector(".active-absent")) status = "absent";
+    else if(row.querySelector(".active-late")) status = "late";
+  }
+  const { error } = await db.from("halqa_attendance").upsert({
+    session_id: sessionId, member_id: memberId, status, rating: rating || null
+  }, { onConflict: "session_id,member_id" });
+  if(error){ alert("خطا: " + error.message); }
+}
+
+function openPhotoModal(){
+  document.getElementById("photoFile").value = "";
+  document.getElementById("photoCaption").value = "";
+  document.getElementById("photoDate").value = "";
+  document.getElementById("photoModal").classList.add("open");
+}
+
+async function savePhoto(){
+  if(!currentCoach){ alert("اول وارد حلقه شو"); return; }
+  const file = document.getElementById("photoFile").files[0];
+  const caption = document.getElementById("photoCaption").value.trim();
+  const date = document.getElementById("photoDate").value.trim();
+  if(!file){ alert("عکس رو انتخاب کن"); return; }
+  if(file.size > 5*1024*1024){ alert("عکس کمتر از ۵ مگابایت"); return; }
+  const ext = file.name.split(".").pop();
+  const fn = "photo_" + currentCoach.id + "_" + Date.now() + "." + ext;
+  const { error: ue } = await db.storage.from("halqa").upload(fn, file);
+  if(ue){ alert("خطای آپلود: " + ue.message); return; }
+  const url = db.storage.from("halqa").getPublicUrl(fn).data.publicUrl;
+  const { error } = await db.from("halqa_photos").insert([{ halqa_id: currentCoach.id, url, caption: caption || null, photo_date: date || null }]);
+  if(error){ alert("خطا: " + error.message); return; }
+  closeModal("photoModal");
+  await renderCoachPhotos();
+  alert("✅ عکس آپلود شد");
+}
+
+async function renderCoachPhotos(){
+  if(!currentCoach) return;
+  const { data, error } = await db.from("halqa_photos").select("*").eq("halqa_id", currentCoach.id).order("created_at", {ascending:false});
+  if(error){ console.error(error); return; }
+  currentPhotos = data || [];
+  const container = document.getElementById("coachPhotosGrid");
+  const empty = document.getElementById("coachPhotosEmpty");
+  if(!container) return;
+  if(!currentPhotos.length){ container.innerHTML = ""; if(empty) empty.style.display = "block"; return; }
+  if(empty) empty.style.display = "none";
+  container.innerHTML = currentPhotos.map((p, i) => `
+    <div class="photo-item" onclick="openLightbox(${i})">
+      <img src="${esc(p.url)}" loading="lazy">
+      <button class="photo-del" onclick="event.stopPropagation();deletePhoto(${p.id})">✕</button>
+      ${p.caption || p.photo_date ? `<div class="photo-caption">${esc(p.caption || "")} ${p.photo_date ? `📅 ${esc(p.photo_date)}` : ""}</div>` : ""}
+    </div>
+  `).join("");
+}
+
+async function deletePhoto(id){
+  if(!confirm("این عکس حذف بشه؟")) return;
+  const { error } = await db.from("halqa_photos").delete().eq("id", id);
+  if(error){ alert("خطا: " + error.message); return; }
+  await renderCoachPhotos();
+}
+
+async function renderCoachProfile(){
+  if(!currentCoach) return;
+  const { data: membersCount } = await db.from("halqa_members").select("*", {count:"exact", head:true}).eq("halqa_id", currentCoach.id);
+  const { data: photosCount } = await db.from("halqa_photos").select("*", {count:"exact", head:true}).eq("halqa_id", currentCoach.id);
+  const { data: sessionsCount } = await db.from("halqa_sessions").select("*", {count:"exact", head:true}).eq("halqa_id", currentCoach.id);
+  const container = document.getElementById("coachProfileBox");
+  if(!container) return;
+  container.innerHTML = `
+    <div class="halqa-profile">
+      <div class="hp-cover">${currentCoach.cover_url ? `<img src="${esc(currentCoach.cover_url)}" alt="">` : "📁"}</div>
+      <div class="hp-body">
+        <h2>${esc(currentCoach.name)}</h2>
+        ${currentCoach.coach_name ? `<p style="color:var(--text-soft);margin:0 0 6px;font-size:14px">👨‍🏫 مربی: ${esc(currentCoach.coach_name)}</p>` : ""}
+        ${currentCoach.description ? `<div class="hp-desc">${esc(currentCoach.description)}</div>` : ""}
+        <div class="hp-stats">
+          <div class="hp-stat">👥 ${fa(membersCount?.length || 0)} عضو</div>
+          <div class="hp-stat">📅 ${fa(sessionsCount?.length || 0)} جلسه</div>
+          <div class="hp-stat">📸 ${fa(photosCount?.length || 0)} عکس</div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+(async () => {
+  updateThemeButtons();
+  await loadHalqasForLogin();
+  await autoLogin();
+})();
+</script>
+</body>
+  </html>
